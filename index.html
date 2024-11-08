@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="menu-btn">☰</button>
+            <a href="#" class="logo"><img src="johny.png"></a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <div class="mytext">
+                <h2>Welcome to <span class="highlight">PathFinder</span></h2>
+                <p>Find Your Sustainable <span class="highlight2">Accommodation</span></p>
+                <span class="para">"Discover Sustainability. Embrace PathFinder. Your Eco-Friendly Haven for Conscious Travelling."</span>
+            </div>
+            </div>
+        
+            <div class="search-container">
+                <input type="text" placeholder="Where to?" />
+                <input type="text" placeholder="Check In - Check Out" />
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="eco-benefits-container">
+                <div class="eco-benefit">
+                    <span><i class="fa-solid fa-globe"></i></span> 
+                    <p>As a guest you save an average of 8kg CO2 per night (295 trees saved).</p>
+                </div>
+                <div class="eco-benefit">
+                    <span><i class="fa-solid fa-droplet"></i></span> 
+                    <p>As a guest you save an average of 302L fresh water per night.</p>
+                </div>
+                <div class="eco-benefit">
+                    <span><i class="fa-solid fa-heart"></i></span> 
+                    <p>Together we make the world greener with every journey.</p>
+                </div>
+            </div>
+        
+    </section>
+    
+    <section class="about">
+        <div class="about-container">
+        <h2>What is <span class="highlight">PathFinder?</span></h2>
+        <p>PathFinder is a one-stop travel app for Gen Z adventurers, offering eco-friendly services, seamless bookings, and unique travel perks. It empowers users to explore with ease, earn eco-rewards, and access everything they need for a sustainable journey—all in one place.</p>
+    </div>
+        <div class="play-video-btn" onclick="toyoutube()"><i class="fa-brands fa-youtube"></i></div>
+    </section>
+    <div class="progress-container">
+        <div class="progress-all">
+        <div class="progress-content">
+            <div class="image-section">
+                <img src="Group 130.svg" alt="Traveler" class="traveler-img">
+            </div>
+            <div class="text-section">
+                <h2>The greener you travel the more you <span class="highlight">win!</span></h2>
+                <p>Steps left to defeat <span class="sword-icon">⚔️</span></p>
+                <div class="steps-left">8,908</div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="steps-done">1,092 steps done</div>
+    </div>
+        <button class="claim-button">Claim reward</button>
+    </div>
+    <div class="cute-divider"></div>
+    <section class="why-choose-us">
+        <h2>Why Choose PathFinder?</h2>
+        <div class="benefits-container">
+            <!-- Eco-Friendly Choices Card -->
+            <div class="benefit-card">
+                <img src="Group 4.svg" alt="Eco-Friendly Choices">
+                <h3>Eco-Friendly Choices</h3>
+                <p>Pathfinder makes sustainable travel easy by offering eco-conscious options like green transport and eco-certified accommodations, helping travelers reduce their impact on the environment.</p>
+            </div>
+    
+            <!-- New Feature Card 1 -->
+            <div class="benefit-card">
+                <img src="Group 5.svg" alt="High-Quailty Services">
+                <h3>High Quality Services</h3>
+                <p>Reliable e-bike rentals, seamless bookings, and trusted partners for a worry-free travel experience. </p>
+            </div>
+    
+            <!-- New Feature Card 2 -->
+            <div class="benefit-card">
+                <img src="Group 6.svg" alt="Sustainable Products">
+                <h3>Sustainable Products</h3>
+                <p>Pathfinder offers eco-friendly travel essentials, from reusable bottles to sustainable gear, for travelers committed to minimizing their impact.</p>
+            </div>
+    
+            
+        </div>
+    </section>
+    <div class="cute-divider"></div>
+    <div class="criteria-container">
+        <h2>Our 10 main <span>Sustainability</span> criteria</h2>
+        <div class="criteria-grid">
+            <div class="criteria-item">
+                <img src="PlugCharging.svg" alt="Renewable Energy">
+                <p>100% Renewable Energy</p>
+            </div>
+            <div class="criteria-item">
+                <img src="Avocado.svg" alt="Organic Food">
+                <p>Organic or Local Food</p>
+            </div>
+            <div class="criteria-item">
+                <img src="SolarPanel.svg" alt="Solar Panels">
+                <p>Solar thermal panels for hot water</p>
+            </div>
+            <div class="criteria-item">
+                <img src="Broom.svg" alt="Ecological Cleaning">
+                <p>Ecological cleaning products</p>
+            </div>
+            <div class="criteria-item">
+                <img src="CloudRain.svg" alt="Rainwater Reuse">
+                <p>Recovery & reuse of rainwater</p>
+            </div>
+            <div class="criteria-item">
+                <img src="Drop.svg" alt="Water Flow Reducers">
+                <p>Water flow reducers</p>
+            </div>
+            <div class="criteria-item">
+                <img src="Garage.svg" alt="Green Building">
+                <p>Green building</p>
+            </div>
+            <div class="criteria-item">
+                <img src="LightbulbFilament.svg" alt="Energy Saving Lights">
+                <p>Energy saving lights</p>
+            </div>
+            <div class="criteria-item">
+                <img src="Recycle.svg" alt="Waste Recycling">
+                <p>More than 75% waste recycling</p>
+            </div>
+            <div class="criteria-item">
+                <img src="Bus.svg" alt="Eco-friendly Transport">
+                <p>Eco-friendly transport</p>
+            </div>
+        </div>
+    </div>
+    <div class="cute-divider"></div>
+    <div  class="ebike-container">
+        <h2> <span>E-bike</span> Near you for <span>rent</span></h2>
+        <div class="ebike-grid">
+          <div class="ebike-item">
+            
+          </div>
+        </div>
+    </div>
+    <footer>
+       
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
