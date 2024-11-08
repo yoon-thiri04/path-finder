@@ -34,7 +34,7 @@ body {
     border-radius: 50%;
 }
 .hero {
-    background-image: url('image/home.jpeg'); /* Replace with the correct image URL */
+    background-image: url('home.jpeg'); /* Replace with the correct image URL */
     background-size: cover;
     background-position: center;
     padding: 0.5em .5em;
