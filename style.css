@@ -849,6 +849,10 @@ h2.next{
     .claim-button {
         font-size: 0.9em;
     }
+    .eco-community h2.next{
+        
+        margin-bottom: 22px;
+    }
     .input-container {
         margin: 9px 18px;
     }
