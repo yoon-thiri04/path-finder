@@ -838,11 +838,11 @@ h2.next{
         font-size: 0.9em;
     }
     .input-container {
-        max-width: 300px;
         margin: 10px 20px;
     }
     .input-container input {
         padding: 3px 3px;
+        width: 50px;
     }
     .input-container button { 
         padding: 8px 8px;
@@ -850,7 +850,7 @@ h2.next{
     .joininput{
         max-width: 300px;
         margin: 0 auto;
-        margin-left: 20px;
+        margin-left: 23px;
     
     }
     .joininput input{
@@ -872,8 +872,8 @@ h2.next{
     }
     .footer-columns {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap:9px;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        
     }
     .footer-bottom {
         font-size: 12px;
