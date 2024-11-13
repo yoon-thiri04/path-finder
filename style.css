@@ -338,14 +338,15 @@ h2.next{
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 450px;
+    max-width: 400px;
     margin: 0 auto;
-    margin-top: 24px;
+    
+    margin: 15px 10px;
 }
 .input-container input {
     border: none;
     outline: none;
-    padding: 10px 10px;
+    padding: 5px 5px;
     flex-grow: 1;
     font-size: 12px;
 }
@@ -355,7 +356,7 @@ h2.next{
     border: none;
     padding: 15px 20px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 11.5px;
     font-family: "Lato", sans-serif;
     
 }
@@ -367,9 +368,10 @@ h2.next{
     align-items: center;
     overflow: hidden;
     justify-content: space-around;
-    max-width: 450px;
+    max-width: 500px;
     margin: 0 auto;
-    margin-top: 24px;
+    margin: 2px 10px;
+    margin-left: 15px;
 
 }
 .joininput input{
@@ -380,7 +382,7 @@ h2.next{
     font-size: 14px;
     border: 1px solid #b5c0b6;
     border-radius: 5px;
-    width: 300px;
+    width: 250px;
     font-family: "Poppins", sans-serif;
 }
 .joininput button{
@@ -391,7 +393,7 @@ h2.next{
     padding: 13px 17px;
     cursor: pointer;
     font-size: 14px;
-    margin: 5px 5px;
+    margin: 13px 5px;
     font-family: "Poppins", sans-serif;
 }
 .package-container {
@@ -693,7 +695,7 @@ h2.next{
 .footer-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap:13px;
+    gap:10px;
 }
 
 
@@ -742,8 +744,10 @@ h2.next{
 .footer-bottom {
     text-align: center;
     margin-top: 30px;
-    font-size: 0.9em;
+    font-size: 12px;
+    line-height: 16px;
     color: #666;
+    font-family: "Poppins", sans-serif;
 }
 
 .language-privacy {
@@ -751,11 +755,13 @@ h2.next{
     justify-content: center;
     gap: 10px;
     margin-bottom: 10px;
-}
 
+}
 .language-privacy a {
-    color: #666;
+    color: #5C5F66;
     text-decoration: none;
+    font-weight: 550;
+    line-height: 16px;
 }
 
 .language-privacy a:hover {
@@ -766,7 +772,7 @@ h2.next{
 /* Media Query for Mobile Screens */
 @media (max-width: 600px) {
     .nav-links {
-        position: fixed; /* Makes the navbar fixed at the top */
+        position: absolute; /* Makes the navbar fixed at the top */
         top: 8%;
         right: 10px;
         width: 44%; /* Ensures the navbar spans across the screen */

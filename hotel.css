@@ -18,7 +18,7 @@ body {
     background-color: white;
 }
 
-.menu-btn {
+.menu-button {
     font-size: 24px;
     background: none;
     border: none;
@@ -48,4 +48,315 @@ body {
 
 .nav-links a:hover {
     color: #007bff;
+}
+.main-map img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.main-map .hero {
+    position: absolute;
+    top: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 170px;
+    left: 3%;
+}
+.hero img{
+    width: 25px;
+    height: 23px;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+.hero .phero{
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    width: 160px;
+    height: 26px;
+}
+
+.phero img{
+    margin: 3px 0;
+    height: 20px;
+}
+.phero p{
+    padding: 8px 0px;
+    font-size: 10px;
+    color: #000;
+    font-family: "Lato", sans-serif;
+}
+.action{
+    position: absolute;
+   top: 45%;
+    right: 3%;
+    width: 72px;
+}
+.cute-divider {
+    width: 36%;
+    height: 3px; /* Slightly thicker for better visibility */
+    background: #C7E6CE; /* Gradient effect */
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: 1px 5px 9px rgba(85, 84, 84, 0.2); /* Subtle shadow effect */
+}
+
+.hotel-recommendation {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.header h2 {
+    font-size: 16px;
+    color: #4B5563;
+    font-weight: 600;
+    margin: 3px;
+   
+}
+
+.header a {
+    font-size: 14px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+.hotel-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    margin: 15px 15px;
+}
+
+.hotel-card img {
+    width: 116px;
+    height: 103px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.hotel-info {
+    flex: 1;
+}
+
+.hotel-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #336749;
+    line-height: 19px;
+    margin: 0 0 5px;
+}
+
+.hotel-info p {
+    font-size: 9px;
+    color: #6C757D;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.hotel-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hotel-meta .star {
+    color: #FFD700;
+}
+
+.hotel-meta  .review {
+    font-size: 10px;
+    color: #666;
+    font-family: "Lato", sans-serif;
+}
+
+.hotel-meta  .price {
+    font-size: 12px;
+    color:  #336749;
+    margin-right: 10px;
+    font-weight: 600;
+    line-height: 14px
+}
+.divide {
+    width: 100%;
+    height: 1.5px; /* Slightly thicker for better visibility */
+    background: #d9dbda; /* Gradient effect */
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    
+}
+.divideme{
+    width: 90%;
+    height: 1.5px; /* Slightly thicker for better visibility */
+    background: #ebedec; /* Gradient effect */
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.foot{
+    background-color: rgb(253, 251, 251);
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+
+.social-icons {
+    display: flex;
+    ;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.social-icons i {
+   font-size: 1.6em;
+  color: #5C5F66;
+  padding: 0 5px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap:10px;
+}
+
+
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 7px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    line-height: 25px;
+    padding: 7px 7px;
+    font-family: "Poppins", sans-serif;
+}
+
+.new-tag {
+    background-color: #e0ffe0;
+    color: #459260;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 18px;
+    margin-left: 4px;
+    border:solid 1px #54B175;
+    font-family: "Poppins", sans-serif;
+}
+
+.external-link {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #666;
+    font-family: "Poppins", sans-serif;
+}
+
+.language-privacy {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.language-privacy a {
+    color: #5C5F66;
+    text-decoration: none;
+    font-weight: 550;
+    line-height: 16px;
+}
+
+.language-privacy a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        position: absolute; /* Makes the navbar fixed at the top */
+        top: 8%;
+        right: 10px;
+        width: 44%; /* Ensures the navbar spans across the screen */
+        background-color: #eff2ee; /* Your light green color */
+        z-index: 1000; /* Higher z-index ensures it appears above other content */
+        padding: 20px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+        display: none;
+        line-height: 30px;
+        
+    }
+    .nav-links li a{
+        color: #55B76B;
+
+    }
+    
+    .nav-links.active {
+        display: block;  
+        border-radius: 15px 0 15px 15px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+    .footer-columns {
+       
+        justify-content: space-evenly;
+    }
+
+    .footer-column {
+        text-align: left;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8em;
+    }
 }

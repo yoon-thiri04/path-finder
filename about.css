@@ -11,7 +11,6 @@ body {
     color: #333;
 }
 
-
 .navbar {
     display: flex;
     align-items: center;
@@ -19,11 +18,8 @@ body {
     padding: 7px;
     background-color: white;
 }
-.highlight {
-    color: #55B76B;
-     /* Green color for highlighting */
-}
-.menu-btn {
+
+.menu-button {
     font-size: 24px;
     background: none;
     border: none;
@@ -35,6 +31,25 @@ body {
     height: 55px;
     margin-top:3px;
 }
+
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.highlight {
+    color: #55B76B;
+     /* Green color for highlighting */
+}
+
 .about-us h2{
     font-size: 24px;
     color: #333;
@@ -174,9 +189,31 @@ body {
     box-shadow: 0 2px 6px rgba(128, 126, 126, 0.2);}
 
 @media (max-width: 600px) {
+    .nav-links {
+        position: absolute; /* Makes the navbar fixed at the top */
+        top: 10%;
+        right: 20px;
+        width: 44%; /* Ensures the navbar spans across the screen */
+        background-color: #eff2ee; /* Your light green color */
+        z-index: 1000; /* Higher z-index ensures it appears above other content */
+        padding: 20px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+        display: none;
+        line-height: 30px;
+        border-radius: 15px 0 15px 15px;
+      
+    }
+    .nav-links li a{
+        color: #55B76B;
+    }
+    .nav-links.active {
+        display: block;
+        
+    }
     .criteria-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
 }
 @media (min-width: 1024px) {
     .why-choose-us h2{

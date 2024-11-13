@@ -5,24 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PathFinder</title>
     <link rel="stylesheet" href="hotel.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="js/aboutscript.js"></script>
     <header>
         <nav class="navbar">
             
             <a href="#" class="logo"><img src="image/IMG_3418 (1).png"></a>
-            <button class="menu-btn">☰</button>
+            <button class="menu-button">☰</button>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#ebike">Ebike</a></li>
-                <li><a href="#hotel">Hotel</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="ebike.html">Ebike</a></li>
+                <li><a href="hotel.html">Hotel</a></li>
             </ul>
         </nav>
     </header>
+    <section class="main-map">
+         <img src="image/maph.png" alt="map">
+         <div class="hero">
+         <dic class="phero">
+            <img src="image/Check Mark.svg">
+            <p>Search as I move the map</p>
+         </dic>
+         <img src="image/Icon.png" alt="camera">
+        </div>
+        <div class="action">
+            <img src="image/Actions.png" alt="search">
+        </div>
+    </section>
+    <div class="cute-divider"></div>
+    <div class="hotel-recommendation">
+        <div class="header">
+            <h2>Hotels recommendation for you</h2>
+            <a href="#">See all</a>
+        </div>
+        <div class="hotel-card">
+            <img src="image/IMG_3649.svg" alt="Bagan Heritage Hotel">
+            <div class="hotel-info">
+                <h3>Bagan Heritage Hotel</h3>
+                <p>Jl. Sunset Road No. 101, Bagan, Myanmar</p>
+                <div class="hotel-meta">
+                    <div class="review">5.0 <i class="star">⭐</i> (318 reviews)</div>
+                    <div class="price">$25/night</div>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="image/IMG_3644.svg" alt="Bagan Lodge Hotel">
+            <div class="hotel-info">
+                <h3>Bagan Lodge Hotel</h3>
+                <p>Shwe Road, New Bagan, Myanmar</p>
+                <div class="hotel-meta">
+                    <div class="review">5.0 <i class="star">⭐</i> (308 reviews)</div>
+                    <div class="price">$25/night</div>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="image/IMG_3646.svg" alt="Tharabar Gate Bagan">
+            <div class="hotel-info">
+                <h3>Tharabar Gate Bagan</h3>
+                <p>CJ. Sunset Road No. 11, Kuta, Bagan, Myanmar</p>
+                <div class="hotel-meta">
+                    <div class="review">4.8 <i class="star">⭐</i> (284 reviews)</div>
+                    <div class="price">$22/night</div>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="image/IMG_3647.svg" alt="Thiripyitsaya Hotel">
+            <div class="hotel-info">
+                <h3>Thiripyitsaya Hotel</h3>
+                <p>No. 11, Near Mountain Kuta, Bagan, Myanmar</p>
+                <div class="hotel-meta">
+                    <div class="review">4.8 <i class="star">⭐</i> (184 reviews)</div>
+                    <div class="price">$20/night</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divideme"></div>
+    <footer class="footer-container">
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Media Kit</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Job Offer <span class="new-tag">New</span></a></li>
+                    <li><a href="#">Contact Us <span class="external-link">↗</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Travelling</h4>
+                <ul>
+                    <li><a href="#">Reward</a></li>
+                    <li><a href="#">Our Green Community</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Blogs <span class="new-tag">New</span></a></li>
+                    <li><a href="#">Eco-sustainability <span class="external-link">↗</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Email Support <span class="external-link">↗</span></a></li>
+                    <li><a href="#">Live Chat <span class="external-link">↗</span></a></li>
+                    <li><a href="#">Phone Support</a></li>
+                    <li><a href="#">Community <span class="external-link">↗</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Terms & Privacy</h4>
+                <ul>
+                    <li><a href="#">Terms of Uses</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="divideme"></div>
+        <div class="footer-bottom">
+            <div class="language-privacy">
+                <a href="#">English</a>
+                <span>•</span>
+                <a href="#">Privacy</a>
+                <span>•</span>
+                <a href="#">Legal</a>
+            </div>
+            <p>© 2024 OR SEEDS MMG1. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
     </body>
     </html>
