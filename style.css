@@ -321,15 +321,18 @@ h2.bottom-text {
     font-size: 21px;
     line-height: 24.18px;
     font-family: "Poppins", sans-serif;
+   
 }
 .eco-community p{
     margin-top: 10px;
     color:#5C5F66;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
+    
 }
 h2.next{
     font-size: 20px;
+    margin-bottom: 20px;
 }
 .input-container {
     display: flex;
@@ -792,7 +795,6 @@ h2.next{
         color: #55B76B;
 
     }
-    
     .nav-links.active {
         display: block;  
         border-radius: 15px 0 15px 15px;
@@ -848,26 +850,26 @@ h2.next{
         font-size: 0.9em;
     }
     .input-container {
-        margin: 10px 20px;
+        margin: 9px 18px;
     }
     .input-container input {
-        padding: 3px 3px;
+        padding: 5px 5px;
         width: 50px;
     }
     .input-container button { 
-        padding: 8px 8px;
+        padding: 10px 10px;
     }
     .joininput{
-        width: 270px;
+        width: 280px;
         margin: 0 auto;
     }
     .joininput input{
-        padding: 9px 9px;
+        padding: 10px 10px;
         width: 100px;
-        font-size: 12px;
+        font-size: 13px;
     }
     .joininput button{
-        padding: 10px 14px;
+        padding: 10px 15px;
         cursor: pointer;
         font-size: 13px;
         
