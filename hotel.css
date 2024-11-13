@@ -40,10 +40,11 @@ body {
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    color: #5C5F66;
+    font-weight: 300;
     transition: color 0.3s ease;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .nav-links a:hover {
@@ -121,11 +122,11 @@ body {
 }
 
 .header h2 {
-    font-size: 16px;
+    font-size: 15.6px;
     color: #4B5563;
     font-weight: 600;
     margin: 3px;
-   
+    font-family: "Poppins", sans-serif;
 }
 
 .header a {
@@ -159,10 +160,11 @@ body {
 
 .hotel-info h3 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     color: #336749;
     line-height: 19px;
-    margin: 0 0 5px;
+    margin: 0 0 8px;
+    font-family: "Poppins", sans-serif;
 }
 
 .hotel-info p {
@@ -296,6 +298,7 @@ body {
     line-height: 16px;
     color: #666;
     font-family: "Poppins", sans-serif;
+    white-space: nowrap;
 }
 
 .language-privacy {
@@ -319,27 +322,24 @@ body {
 @media (max-width: 600px) {
     .nav-links {
         position: absolute; /* Makes the navbar fixed at the top */
-        top: 8%;
-        right: 10px;
-        width: 44%; /* Ensures the navbar spans across the screen */
-        background-color: #eff2ee; /* Your light green color */
+        top: 10%;
+        right: 0%;
+        width: 100%; /* Ensures the navbar spans across the screen */
+        background-color: white; /* Your light green color */
         z-index: 1000; /* Higher z-index ensures it appears above other content */
-        padding: 20px 20px;
+        padding: 20px 15px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
         display: none;
         line-height: 30px;
-        
     }
     .nav-links li a{
-        color: #55B76B;
-
+        color: #5C5F66;
+        font-weight: 300;
+        font-family: "Poppins",sans-serif;
     }
-    
     .nav-links.active {
-        display: block;  
-        border-radius: 15px 0 15px 15px;
+        display: block; 
     }
-
     .menu-button {
         display: block;
     }
@@ -351,9 +351,7 @@ body {
         gap: 10px;
     }
     .footer-columns {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap:9px;
+        grid-template-columns: repeat(2, 1fr); /* Only two columns on small screens */
     }
     .footer-bottom {
         font-size: 12px;

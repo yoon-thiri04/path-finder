@@ -41,10 +41,11 @@ body {
 }
 
 .nav-links a {
-    color: #333;
-    font-weight: 500;
+    color: #5C5F66;
+    font-weight: 300;
     transition: color 0.3s ease;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .bike-container {
@@ -169,25 +170,23 @@ body {
 @media (max-width: 600px) {
     .nav-links {
         position: absolute; /* Makes the navbar fixed at the top */
-        top: 8%;
-        right: 10px;
-        width: 44%; /* Ensures the navbar spans across the screen */
-        background-color: #eff2ee; /* Your light green color */
+        top: 10%;
+        right: 0%;
+        width: 100%; /* Ensures the navbar spans across the screen */
+        background-color: white; /* Your light green color */
         z-index: 1000; /* Higher z-index ensures it appears above other content */
-        padding: 20px 20px;
+        padding: 20px 15px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
         display: none;
         line-height: 30px;
-        
     }
     .nav-links li a{
-        color: #55B76B;
-
+        color: #5C5F66;
+        font-weight: 300;
+        font-family: "Poppins",sans-serif;
     }
-    
     .nav-links.active {
-        display: block;  
-        border-radius: 15px 0 15px 15px;
+        display: block; 
     }
 
     .menu-button {
