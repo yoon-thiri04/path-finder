@@ -313,7 +313,7 @@ h2.bottom-text {
     padding-top: 10px;
 }
 .eco-community{
-    padding: 23px 15px;
+    padding: 25px 18px;
     text-align: center;
 
 }
@@ -341,12 +341,12 @@ h2.next{
     max-width: 400px;
     margin: 0 auto;
     
-    margin: 15px 10px;
+    
 }
 .input-container input {
     border: none;
     outline: none;
-    padding: 5px 5px;
+    
     flex-grow: 1;
     font-size: 12px;
 }
@@ -354,7 +354,7 @@ h2.next{
     background-color: #55B76B;
     color: white;
     border: none;
-    padding: 15px 20px;
+   
     cursor: pointer;
     font-size: 11.5px;
     font-family: "Lato", sans-serif;
@@ -698,8 +698,6 @@ h2.next{
     gap:10px;
 }
 
-
-
 .footer-column h4 {
     margin-bottom: 10px;
     font-size: 14px;
@@ -839,11 +837,32 @@ h2.next{
     .claim-button {
         font-size: 0.9em;
     }
-    .footer-columns {
-       
-        justify-content: space-evenly;
+    .input-container {
+        max-width: 300px;
+        margin: 10px 20px;
     }
-
+    .input-container input {
+        padding: 3px 3px;
+    }
+    .input-container button { 
+        padding: 8px 8px;
+    }
+    .joininput{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-left: 20px;
+    
+    }
+    .joininput input{
+        padding: 9px 8px;
+        width: 200px;
+    }
+    .joininput button{
+        padding: 10px 14px;
+        cursor: pointer;
+        font-size: 13px;
+        
+    }
     .footer-column {
         text-align: left;
     }
@@ -851,9 +870,14 @@ h2.next{
     .social-icons {
         gap: 10px;
     }
-
+    .footer-columns {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap:9px;
+    }
     .footer-bottom {
-        font-size: 0.8em;
+        font-size: 12px;
+        font-family: "Poppins", sans-serif;
     }
     
 }@media (min-width: 1024px) {

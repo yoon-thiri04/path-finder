@@ -343,11 +343,6 @@ body {
     .menu-button {
         display: block;
     }
-    .footer-columns {
-       
-        justify-content: space-evenly;
-    }
-
     .footer-column {
         text-align: left;
     }
@@ -355,8 +350,13 @@ body {
     .social-icons {
         gap: 10px;
     }
-
+    .footer-columns {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap:9px;
+    }
     .footer-bottom {
-        font-size: 0.8em;
+        font-size: 12px;
+        font-family: "Poppins", sans-serif;
     }
 }
