@@ -62,7 +62,7 @@ body {
 
 /* Shadow gradient for text */
 .mytext {
-    padding: 1.2em 0 1.2em 0;
+    padding: 20px 15px;
     border-radius: 8px;
     display: inline-block;
 }
@@ -70,8 +70,8 @@ body {
 /* Headings and text styling */
 .hero-text h2 {
     font-weight: 700;
-    margin: 0.5em 0;
-    font-size: 28px;
+    
+    font-size: 26px;
 }
 
 .highlight {
@@ -695,7 +695,7 @@ h2.next{
 .footer-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap:10px;
+    gap:9px;
 }
 
 .footer-column h4 {
@@ -721,6 +721,7 @@ h2.next{
     line-height: 25px;
     padding: 7px 7px;
     font-family: "Poppins", sans-serif;
+    white-space: nowrap;
 }
 
 .new-tag {
@@ -766,6 +767,11 @@ h2.next{
     text-decoration: underline;
 }
 
+@media (max-width: 480px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr); /* Only two columns on small screens */
+    }
+}
 
 /* Media Query for Mobile Screens */
 @media (max-width: 600px) {
@@ -796,9 +802,13 @@ h2.next{
         display: block;
     }
     .hero-text h2 {
-        font-size: 28.31px;
+        font-size: 23px;
+        padding: 0 0;
     }
-
+    .mytext {
+        padding: 20px 5px;
+       
+    }
     .about {
         flex-direction:column;
         
@@ -848,14 +858,13 @@ h2.next{
         padding: 8px 8px;
     }
     .joininput{
-        max-width: 300px;
+        width: 270px;
         margin: 0 auto;
-        margin-left: 23px;
-    
     }
     .joininput input{
-        padding: 9px 8px;
-        width: 200px;
+        padding: 9px 9px;
+        width: 100px;
+        font-size: 12px;
     }
     .joininput button{
         padding: 10px 14px;
@@ -871,9 +880,7 @@ h2.next{
         gap: 10px;
     }
     .footer-columns {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        
+        grid-template-columns: repeat(2, 1fr); /* Only two columns on small screens */
     }
     .footer-bottom {
         font-size: 12px;
