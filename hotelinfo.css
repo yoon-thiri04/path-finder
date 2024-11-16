@@ -362,15 +362,15 @@ flex-shrink: 0;
 .facilities-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 8px;
+    justify-content: space-around;
+    gap: 3px;
     margin-bottom: 14px;
     
 }
 
 .facilities-list button {
     padding: 8px 12px;
-    width: 145px;
+    width: 140px;
     border: 1px solid #ddd;
     border-radius: 20px;
     background-color: #fff;
