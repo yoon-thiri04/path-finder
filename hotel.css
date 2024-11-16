@@ -112,6 +112,9 @@ body {
     margin: 0 auto;
     margin-bottom: 40px;
 }
+.hotel-recommendation a{
+    text-decoration: none;
+}
 
 .header {
     display: flex;
@@ -144,6 +147,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
     margin: 15px 15px;
+    
 }
 
 .hotel-card img {

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bagan Lodge Hotel Rooms</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.hotel-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.room-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.room-info {
+    padding: 15px;
+}
+
+.room-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.room-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.room-details {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.room-details li {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.room-details .included {
+    color: #38b000;
+    font-weight: bold;
+}
+
+.room-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.room-price .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #38b000;
+}
+
+.room-price .tax-info {
+    font-size: 12px;
+    color: #888;
+}
+
+.select-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #38b000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 0 12px 12px;
+    cursor: pointer;
+}
+
+.select-button:hover {
+    background-color: #2d8a00;
+}
+
+@media (max-width: 600px) {
+    .hotel-container {
+        padding: 10px;
+    }
+
+    .room-info {
+        padding: 10px;
+    }
+
+    .select-button {
+        padding: 10px;
+    }
+}
+
+</style>
+<body>
+
+<div class="hotel-container">
+    <h2>Bagan Lodge Hotel</h2>
+
+    <!-- Deluxe King Room Card -->
+    <div class="room-card">
+        <img src="room1.jpg" alt="Deluxe King Room" class="room-image">
+        <div class="room-info">
+            <h3>Deluxe King Room</h3>
+            <p>Price for 2 Adults</p>
+            <ul class="room-details">
+                <li>1 Extra-large double bed</li>
+                <li>Room size: 16m<sup>2</sup></li>
+                <li class="included">Breakfast included in the price</li>
+                <li>Private Bathroom</li>
+                <li>Free WiFi</li>
+                <li>Air Conditioning</li>
+            </ul>
+            <div class="room-price">
+                <span class="price">$25.00</span>
+                <span class="tax-info">+ $0.5 taxes and fees</span>
+            </div>
+            <button class="select-button">SELECT</button>
+        </div>
+    </div>
+
+    <!-- Luxury Family Room Card -->
+    <div class="room-card">
+        <img src="room2.jpg" alt="Luxury Family Room" class="room-image">
+        <div class="room-info">
+            <h3>Luxury Family Room</h3>
+            <p>Price for 2 Adults, 2 Children</p>
+            <ul class="room-details">
+                <li>1 Extra-large double bed</li>
+                <li>Room size: 58m<sup>2</sup></li>
+                <li class="included">Breakfast included in the price</li>
+                <li>Private Bathroom</li>
+                <li>Free WiFi</li>
+                <li>Air Conditioning</li>
+            </ul>
+            <div class="room-price">
+                <span class="price">$25.00</span>
+                <span class="tax-info">+ $0.5 taxes and fees</span>
+            </div>
+            <button class="select-button">SELECT</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
