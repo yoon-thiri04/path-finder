@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PathFinder</title>
+    <script>
+        function clearForm() {
+            // Clear all the input fields in the form
+            document.getElementById("myForm").reset();
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -22,7 +29,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="ebike.html">Ebike Offers</a></li>
+                <li><a href="ebike.html">Ebike Rent</a></li>
                 <li><a href="hotel.html">Hotel Booking</a></li>
                 
                 <li><a href="#">Blog</a></li>
@@ -31,38 +38,63 @@
             </ul>
         </nav>
     </header>
-    
     <section class="hero">
-        <div class="hero-text">
-            <div class="mytext">
-                <h2>Welcome to <span class="highlight">PathFinder</span></h2>
-                <p>Find Your Sustainable <span class="highlight2">Accommodation</span></p>
-                <div class="para"><p>"Discover Sustainability. Embrace PathFinder.</p>
-                     <p>Your Eco-Friendly Haven for Conscious Travelling."</p></div>
-            </div>
-            </div>
-        
-            <div class="search-container">
-                <input type="text" placeholder="Where to?" />
-                <input type="text" placeholder="Check In - Check Out" />
-                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="eco-benefits-container">
-                <div class="eco-benefit">
-                    <span><i class="fa-solid fa-globe"></i></span> 
-                    <p>As a guest you save an average of 8kg CO2 per night (295 trees saved).</p>
-                </div>
-                <div class="eco-benefit">
-                    <span><i class="fa-solid fa-droplet"></i></span> 
-                    <p>As a guest you save an average of 302L fresh water per night.</p>
-                </div>
-                <div class="eco-benefit">
-                    <span><i class="fa-solid fa-heart"></i></span> 
-                    <p>Together we make the world greener with every journey.</p>
-                </div>
-            </div>
-        
+        <div class="hero-content">
+          <h2>Welcome to PathFinder</h2>
+          <p>Find Your Sustainable<br><b>Accommodation</b></p>
+          <div class="butter"><img src="image/butt.svg"></div>
+          <div class="search-container">
+           
+            <input type="text" placeholder="Where to?">
+            <input type="text" placeholder="Check In - Check Out">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <p>"Discover Sustainability” Your Eco-Friendly Haven for Conscious Travelling.</p>
+       
+          </div>
+           </div>
     </section>
+
+    <section class="features-section">
+        <div class="features">
+          <div class="feature">
+            <img src="image/gas.svg" alt="Stations" class="icon">
+            <p>Stations</p>
+          </div>
+          <div class="feature">
+            <img src="image/ho.svg" alt="Hotels" class="icon">
+            <p>Hotels</p>
+          </div>
+          <div class="feature">
+            <img src="image/la.svg" alt="Luggage" class="icon">
+            <p>Luggage</p>
+          </div>
+          <div class="feature">
+            <img src="image/eb.svg" alt="Ebike" class="icon">
+            <p>Ebike</p>
+          </div>
+          <div class="feature">
+            <img src="image/pack.svg" alt="Packages" class="icon">
+            <p>Packages</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Benefits Section -->
+      <section class="benefits-section">
+        <div class="benefit-item">
+          <img src="image/wld.svg" alt="World Icon">
+          <p>As a guest you save an average of 8kg CO2 per night (295 trees saved).</p>
+        </div>
+        <div class="benefit-item">
+          <img src="image/mdr.svg" alt="Water Drop Icon">
+          <p>As a guest you save an average of 302L fresh water per night.</p>
+        </div>
+        <div class="benefit-item">
+          <img src="image/he.svg" alt="Heart Icon">
+          <p>Together we make the world greener with every journey with PathFinder.</p>
+        </div>
+      </section>
+      
     
     <section class="about">
         <div class="about-container">
@@ -107,7 +139,8 @@
         </h2>
         <div class="input-container">
             <input type="text">
-            <button>Join the Eco-Community</button>
+            <button type="submit">Join the Eco-Community</button>
+           
         </div>      
     </div>
     </section>
@@ -115,16 +148,19 @@
     <div class="package-container">
         <div class="card" >
             <img src="image/IMG_3397 1.png" alt="Staycation in Bagan" >
+            <div class="my-mycard">
                 <div class="card-subtitle">Enjoy these cool staycation promotions in Bagan</div>
                 <div class="card-title-1">Best staycation deals</div>
                 <a href="#" class="package-button">See packages</a>  
+            </div>   
         </div>
         <div class="card" >
             <img src="image/IMG_3430.png" alt="Activities in NgweSaung" >
-        
+        <div class="my-mycard">
                 <div class="card-subtitle">Don't forget to check out these while you're here</div>
                 <div class="card-title">All time favourite activities in NgweSaung</div>
                 <a href="#" class="package-button">See packages</a>
+                </div>
         </div>
     </div>
     <div class="cute-divider"></div>
@@ -206,7 +242,7 @@
         <h2>
            Join Our Newsletter
         </h2>
-        <p>Be the first to know about our latest updates, exclusive offers, and more.</p>
+        <p>Be the first to know about our latest <br>updates, exclusive offers, and more.</p>
         <div class="joininput">
             <input type="text" placeholder="Enter your email">
             <button>Subscribe</button>

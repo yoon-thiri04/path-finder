@@ -61,14 +61,14 @@ body {
 }
 .hotel-content {
     top:40%;
-    margin: 0 13px;
+    margin: 0 12px;
     background-color: #FFFFFF;
     border-radius: 15px;
     position: absolute;
-    padding: 8px 15px;
+    padding: 9px 15px;
 }
 .hotel-name {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     
@@ -101,12 +101,13 @@ body {
     font-family: "Lato",sans-serif;
 }
 .address i {
-    margin-right: 10px;
-    color: rgb(110, 107, 107);
-    font-size: 14px;
+    margin-right: 12px;
+    color: rgb(101, 100, 100);
+    font-size: 20px;
 }
 .ratings{
     border-top: 1px solid #eee;
+    margin:10px 0;
 }
 .rating-header {
     display: flex;
@@ -139,6 +140,7 @@ body {
     font-weight: 700;
     color: #55B76B;
     margin-right: 10px;
+    font-family: "Lato",sans-serif;
 }
 .rating-text .highlight{
     color: #55B76B;
@@ -172,14 +174,15 @@ gap:8px;
 h2{
     font-size: 16px;
    font-family: "Lato",sans-serif;
+   margin-top: 10px;
 }
 .review-container {
     display: flex;
 overflow-x: auto;
 scroll-behavior: smooth;
 gap: 10px;
-padding-left: 2px;
-padding-top: 10px;
+
+padding-top: 15px;
 }
 .review-box {
     min-width: 80%;
@@ -208,14 +211,14 @@ flex-shrink: 0;
     width: 100%;
     margin-top:20px;
     border-top: 1px solid #eee;
-    padding: 5px 5px;
+    
 }
 
 .facilities-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5px;
+    margin: 10px 0;
     padding: 15px 0;
 }
 
@@ -231,7 +234,29 @@ flex-shrink: 0;
     text-decoration: none;
     font-family: "Lato",sans-serif;
 }
+.facilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4px;
+    margin-bottom: 20px;
+    
+}
 
+.facilities-list button {
+    padding: 8px 12px;
+    width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "Lato",sans-serif;
+}
+
+.facilities-list button:hover {
+    background-color: #f6fdf5;
+}
 .checkin-checkout{
     border-top: 2px solid #eee;
     padding: 15px 3px;
@@ -259,31 +284,44 @@ flex-shrink: 0;
     border-top: 1px solid #eee;
     padding: 15px 0;
     margin:0 auto;
+    text-align: center;
 }
 .hotel-description h4 {
     font-size: 16px;
     margin-bottom: 10px;
     color: #333;
+    text-align: left;
     font-family: "Lato",sans-serif;
 }
 
-.hotel-description p {
-    font-size: 14px;
+
+.hotel-description  .description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 90px;
+    white-space: normal;
+    transition: max-height 0.3s ease;
+        font-size: 14px;
     color: #27272A;
-    font-weight:300;
+    font-weight:380;
     text-align: justify;
     margin-bottom: 10px;
     line-height: 21px;
     font-family: "Lato",sans-serif;
-}
-
+    }
+    
+.description.expanded {
+    max-height: 500px; 
+    }
 .view-more {
     color: #55B76B;
     font-size: 14px;
     text-decoration: none;
     text-align: center;
-    padding-left:100px ;
+   
     font-family:"Lato",sans-serif;
+    display: inline-block; /* Allows for margin auto centering if needed */
+    
 }
 
 .price-section {
@@ -331,7 +369,8 @@ flex-shrink: 0;
 }
 
 .select-button:hover {
-    background-color: #2f8a00;
+    background-color: #c5f9a4;
+    
 }
 
 @media (max-width: 600px) {
@@ -359,27 +398,4 @@ flex-shrink: 0;
         display: block;
     }
     
-.facilities-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3px;
-    margin-bottom: 14px;
-    
-}
-
-.facilities-list button {
-    padding: 8px 12px;
-    width: 140px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background-color: #fff;
-    font-size: 14px;
-    cursor: pointer;
-    font-family: "Lato",sans-serif;
-}
-
-.facilities-list button:hover {
-    background-color: #f6e6e6;
-}
 }

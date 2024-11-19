@@ -118,18 +118,18 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin:15px;
     gap: 10px;
 }
 
 .header h2 {
-    font-size: 15.6px;
+    font-size: 16px;
     color: #4B5563;
     font-weight: 600;
-    margin: 3px;
-    font-family: "Poppins", sans-serif;
+    line-height: 19px;
+    font-family: "Lato", sans-serif;
 }
 
 .header a {

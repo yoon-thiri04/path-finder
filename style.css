@@ -50,51 +50,35 @@ body {
     font-size: 14px;
 }
 
-.hero {
-    background-image: url('home.JPEG');
-    background-size: cover;
-    background-position: center;
-    padding: 0.5em .5em;
+.hero{
+    background: white;
+    position: relative; 
+    background: url('image/Group\ 11.svg') ;
+    z-index: -1;
+    
+    background-size: 130vw 52vh;
+    background-repeat: no-repeat;
+}
+
+  .hero-content {
     text-align: center;
     color: white;
-    position: relative;
-    /* Set a specific height */
-}
-
+    padding-top: 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 27px;
+    margin: 0;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin: 6px 0;
+    font-family: "Poppins",sans-serif;
+  }
+  
 /* Shadow gradient for text */
-.mytext {
-    padding: 20px 15px;
-    border-radius: 8px;
-    display: inline-block;
-}
 
-/* Headings and text styling */
-.hero-text h2 {
-    font-weight: 700;
-    
-    font-size: 26px;
-}
-
-.highlight {
-    color: #55B76B;
-    
-}
-
-.hero-text p {
-    font-size: 1.2em;
-    margin: 0.5em 0;
-    
-}
-.para{
-    padding-top: 10px;
-}
-.para p{
-    font-size: 14px;
-    font-family: "Lato", sans-serif;
-    color: #f8f8f8;
-    text-align: center;
-
-}
 .highlight {
     color: #55B76B;
      /* Green color for highlighting */
@@ -107,30 +91,119 @@ body {
 .search-container {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
-    margin-top: 1em;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    gap: 5px;
+    background-image: url('image/Flight\ ticket.png');
     color: white;
-    padding: 40px;
-    width: 100%; /* Set width as a percentage or a fixed value, e.g., 300px */
-    max-width: 400px; /* Add max-width for better control on larger screens */
-    margin: 0 auto; /* Center the container */
-    margin-top: 20px;
+    padding: 25px;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 40px;
+    min-width: 100px;
     border-radius: 8px; /* Optional: Add rounded corners for a softer look */
 }
-.search-container input, .search-btn {
-    padding: 0.8em;
-    font-size: 0.7em;
+.hero-content .butter{
+    top:42%;
+    left: 7%;
+    position: absolute;
+    
+    width: 200px;
+    height: 100px;
+    transform: translateX(-50%); /* Centering adjustment */
+  z-index: 10;
+}
+.search-container input {
+    font-size:12px;
+    height: 30px;
     text-align: center;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #55B76B;
 }
-
+.search-container button{
+    background-color: #55B76B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.search-container button i{
+    font-size: 16px;
+}
+.search-container p{
+    font-size: 9.5px;
+    text-align: center;
+    font-family: "Lato",sans-serif;
+    padding-top: 8px;
+    color: #55B76B;
+}
 .search-btn {
     background-color: #55B76B;
     color: white;
     cursor: pointer;
 }
+.features-section {
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background */
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around; /* Space evenly between items */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 5px; /* Space between items */
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column; /* Stack icon and text */
+    align-items: center; /* Center align */
+    text-align: center; /* Center text */
+    width: 50px; /* Set a fixed width for consistency */
+  }
+  
+  .feature img.icon {
+    width: 30px; /* Icon size */
+    height: 30px; /* Maintain square dimensions */
+    margin-bottom: 10px; 
+    padding: 4px 4px;
+    border-radius: 15px;
+    background-color: #55B76B;/* Space between icon and text */
+  }
+  
+  .feature p {
+    margin: 0;
+    font-size: 12px;
+    color: #55B76B;
+    font-weight: 500; /* Dark text color */
+    font-family: "Lato",sans-serif;
+  }
+  .benefits-section {
+    padding: 15px 20px;
+    background-color: #62B474; /* Light background */
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 15px; /* Space between image and text */
+    margin-bottom: 10px; /* Space between list items */
+  }
+  .benefit-item img {
+    width: 30px; /* Adjust size as needed */
+    height: 26px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+  }
+  
+  .benefit-item p {
+    margin: 0;
+    font-size: 12px; /* Adjust font size for better readability */
+    color: #f9f9f9; /* Text color */
+    line-height: 1.5;
+    font-family: "Lato",sans-serif;
+  }
+  
 .eco-benefits-container {
     display: flex;
     flex-direction: column;
@@ -267,14 +340,13 @@ body {
     width: 50%;
     padding: 10px;
     margin-top: 15px;
-    background: #e5f5eb;
-    border: 2px solid #39b54a;
-    color: #39b54a;
+    border: 2px solid #8CDB9E;
+    color: #8CDB9E;
     border-radius: 20px;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
     cursor: pointer;
-    transition: background-color 0.3s;
+    
 }
 
 .claim-button:hover {
@@ -420,55 +492,51 @@ h2.next{
     display: block;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
 }
-
-.card-title-1{
+.card .my-mycard{
     position: absolute;
-    top: 35%;
-    left:42%;
-    transform: translate(-50%, -50%);
-    font-size: 21px;
+    top: 15%;
+    left:10%;
+}
+.card-title-1{
+    font-family: "Inter",sans-serif;
+    font-size: 24px;
     font-weight: bold;
     width: 230px;
     color: white;
     text-align: left;
 }
 .card-title {
-    position: absolute;
-    top: 35%;
-    left:53%;
-    transform: translate(-50%, -50%);
-    font-size: 21px;
+    
+    font-family: "Inter",sans-serif;
+    font-size: 24px;
     font-weight: bold;
     width: 90%;
     color: white;
     text-align: left;
 }
 .card-subtitle {
-    position: absolute;
-    top: 18%;
-    left:54%;
-    transform: translate(-50%, -50%);
-    font-size: 10px;
+    font-family: "Inter",sans-serif;
+    font-size: 12px;
     padding-bottom: 10px;
-    width: 90%;
     color: white;
     text-align: left;
     
     
 }
 .package-button {
+    
     position: absolute;
-    top: 68%;
-    left:27%;
-    transform: translate(-50%, -50%);
+    top: 160%;
+    left: -1%;
     display: inline-block;
+    font-family: "Inter",sans-serif;
     padding: 10px 20px;
     background-color: white;
-    color: black;
+    color: #000000;
     border: none;
-    border-radius: 18px;
+    border-radius: 9px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 12px;
 }
 .attractions-container {
@@ -520,15 +588,17 @@ h2.next{
 }
 
 .attraction-info .nb {
-    font-size: 15px;
+    font-size: 16px;
     color: #333;
     font-weight: 500;
+    font-family: "Inter", sans-serif;
 }
 
 .attraction-info p {
     padding: 2px 0;
     font-size: 12px;
     color: #555;
+    font-family: "Inter", sans-serif;
 }
 .ballon-card img{
     width: 100%;
@@ -857,14 +927,14 @@ h2.next{
         margin: 9px 18px;
     }
     .input-container input {
-        padding: 5px 5px;
+        padding: 9px 9px;
         width: 50px;
     }
     .input-container button { 
         padding: 10px 10px;
     }
     .joininput{
-        width: 280px;
+        width: 290px;
         margin: 0 auto;
     }
     .joininput input{
@@ -892,8 +962,20 @@ h2.next{
         font-size: 12px;
         font-family: "Poppins", sans-serif;
     }
+   
     
-}@media (min-width: 1024px) {
+}
+@media  (max-width: 630px){
+    .search-container p{
+        
+        padding-top: 10px;
+       
+    }
+}
+    
+
+
+@media (min-width: 1024px) {
     .eco-benefits-container {
         flex-direction: row;
         justify-content: space-around;
