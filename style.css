@@ -53,10 +53,9 @@ body {
 .hero{
     background: white;
     position: relative; 
-    background: url('image/Group\ 11.svg') ;
+    background: url('image/homep.png') ;
     z-index: -1;
-    
-    background-size: 130vw 52vh;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -89,33 +88,29 @@ body {
     font-weight: bold;
 }
 .search-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background-image: url('image/Flight\ ticket.png');
+   
+    background-image: url('image/ticket.png');
     color: white;
-    padding: 25px;
+    padding: 26px;
     background-size: cover;
-    margin: 0 auto;
-    margin-top: 40px;
-    min-width: 100px;
+    margin-top: 50px;
     border-radius: 8px; /* Optional: Add rounded corners for a softer look */
 }
 .hero-content .butter{
-    top:42%;
-    left: 7%;
+    top:43%;
+    right:-5%;
     position: absolute;
-    
-    width: 200px;
+    width: 100px;
     height: 100px;
-    transform: translateX(-50%); /* Centering adjustment */
-  z-index: 10;
+    z-index: 10;
 }
 .search-container input {
     font-size:12px;
     height: 30px;
-    text-align: center;
+   text-align: center;
     border-radius: 5px;
+    width: 300px;
+    margin: 4px 0;
     border: 1px solid #55B76B;
 }
 .search-container button{
@@ -125,7 +120,9 @@ body {
     border-radius: 5px;
     padding: 8px 10px;
     cursor: pointer;
+    width: 300px;
     font-size: 12px;
+    box-shadow: 0 7px 8px rgb(180, 180, 180);
 }
 .search-container button i{
     font-size: 16px;
@@ -134,7 +131,7 @@ body {
     font-size: 9.5px;
     text-align: center;
     font-family: "Lato",sans-serif;
-    padding-top: 8px;
+    margin-top: 12px;
     color: #55B76B;
 }
 .search-btn {
@@ -494,21 +491,20 @@ h2.next{
 }
 .card .my-mycard{
     position: absolute;
-    top: 15%;
-    left:10%;
+    top: 13%;
+    left:8%;
 }
 .card-title-1{
     font-family: "Inter",sans-serif;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
     width: 230px;
     color: white;
     text-align: left;
 }
 .card-title {
-    
     font-family: "Inter",sans-serif;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
     width: 90%;
     color: white;
@@ -526,7 +522,7 @@ h2.next{
 .package-button {
     
     position: absolute;
-    top: 160%;
+    top: 140%;
     left: -1%;
     display: inline-block;
     font-family: "Inter",sans-serif;

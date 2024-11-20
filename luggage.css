@@ -1,0 +1,223 @@
+ /* styles.css */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    background-color: white;
+}
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 53px; /* Adjust size as needed */
+    height: 55px;
+    margin-top:3px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #5C5F66;
+    font-weight: 300;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-size: 14px;
+}
+.map-container img{
+    width: 100%;
+    height: 90vh;
+   object-fit: cover;
+}
+
+ .marker1 {
+  position: absolute;
+  top:252px;
+  left: 298px;
+  color: #54B175;
+  border-radius: 50%;
+  
+}
+.marker1 img{
+    width: 100%;
+    height: 32px;
+}
+.marker2 {
+    position: absolute;
+    top:90px;
+    left: 159px;
+    color: #54B175;
+    border-radius: 50%;
+    
+  }
+  .marker2 img{
+      width: 100%;
+      height: 32px;
+  }
+  .marker3 {
+    position: absolute;
+    top:290px;
+    left: 75px;
+    color: #54B175;
+    border-radius: 50%;
+    
+  }
+  .marker3 img{
+      width: 100%;
+      height: 32px;
+  }
+  .marker4 {
+    position: absolute;
+    top:470px;
+    left: 180px;
+    color: #54B175;
+    border-radius: 50%;
+    
+  }
+  .marker4 img{
+      width: 100%;
+      height: 32px;
+  }
+  .marker5 {
+    position: absolute;
+    top:510px;
+    left: 310px;
+    color: #54B175;
+    border-radius: 50%;
+    
+  }
+  .marker5 img{
+      width: 100%;
+      height: 32px;
+  }
+  .marker6 {
+    position: absolute;
+    top:320px;
+    left: 130px;
+    color: #54B175;
+    border-radius: 50%;
+    
+  }
+  .marker6 img{
+      width: 100px;
+      height: 100px;
+  }
+.location-list {
+  background: #fff;
+  padding: 20px;
+  
+  position:absolute;
+  top:98%;
+  right: 0%;
+  left:0%;
+  border-radius: 18px;
+}
+.location-list h3{
+    text-align: left;
+    font-size: 14px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.location-list ul{
+    list-style: none;
+}
+.location-list ul li{
+    margin: 10px 0;
+    font-size: 14px;
+}
+.location-list img{
+    margin-right: 5px;
+    width: 30px;
+}
+
+.centered-item {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 9px; /* Add some space between the image and text */
+    font-size: 14px; /* Adjust font size if needed */
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+.centered-item img {
+    width: 30px; /* Adjust the size of the icon */
+    
+}
+.how-it-works-btn{
+    color:#FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    background: #55B76B;
+    padding: 15px 110px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center; 
+}
+.how-it-works-btn:hover {
+  background: #4fda8e;
+}
+.cute-divider {
+    width: 20%;
+    height: 3px; /* Slightly thicker for better visibility */
+    background: #dbd9d9; /* Gradient effect */
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(128, 126, 126, 0.2); /* Subtle shadow effect */
+}
+@media (max-width: 600px) {
+    .nav-links {
+        position: absolute; /* Makes the navbar fixed at the top */
+        top: 10%;
+        right: 0%;
+        width: 100%; /* Ensures the navbar spans across the screen */
+        background-color: white; /* Your light green color */
+        z-index: 1000; /* Higher z-index ensures it appears above other content */
+        padding: 20px 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+        display: none;
+        line-height: 30px;
+    }
+    .nav-links li a{
+        color: #5C5F66;
+        font-weight: 300;
+        font-family: "Poppins",sans-serif;
+    }
+    .nav-links.active {
+        display: block; 
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
