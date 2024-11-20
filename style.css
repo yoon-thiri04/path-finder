@@ -91,13 +91,13 @@ body {
    
     background-image: url('image/ticket.png');
     color: white;
-    padding: 26px;
+    padding: 20px;
     background-size: cover;
     margin-top: 50px;
     border-radius: 8px; /* Optional: Add rounded corners for a softer look */
 }
 .hero-content .butter{
-    top:43%;
+    top:44%;
     right:-5%;
     position: absolute;
     width: 100px;
@@ -131,7 +131,7 @@ body {
     font-size: 9.5px;
     text-align: center;
     font-family: "Lato",sans-serif;
-    margin-top: 12px;
+    margin-top: 10px;
     color: #55B76B;
 }
 .search-btn {

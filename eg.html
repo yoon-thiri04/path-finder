@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Nearby Station Card</title>
+</head>
+<style>
+    /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.station-card {
+  border: 2px solid #aef0c3;
+  background-color: #f5fff9;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.details {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.status {
+  background-color: #eaffea;
+  color: #3fb772;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.station-info h4 {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.station-info .distance {
+  font-size: 12px;
+  color: #777;
+}
+
+.additional-info {
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.additional-info span {
+  display: block;
+}
+
+.go-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.go-button {
+  background-color: #3fb772;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.go-button:hover {
+  background-color: #34a563;
+}
+
+</style>
+<body>
+  <div class="station-card">
+    <h3 class="section-title">Nearby Stations</h3>
+    <div class="card-content">
+      <div class="icon-container">
+        <img src="battery-icon.png" alt="Battery Icon" class="icon">
+      </div>
+      <div class="details">
+        <div class="status">
+          <span class="plugs">7/12 Plugs Available</span>
+        </div>
+        <div class="station-info">
+          <h4>2nd Street, PTT Station</h4>
+          <span class="distance">3.0 mil</span>
+        </div>
+        <div class="additional-info">
+          <span>🚗 3 Min away</span>
+          <span>🔌 CCS / NACS Adapter</span>
+        </div>
+      </div>
+      <div class="go-button-container">
+        <button class="go-button">Go</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

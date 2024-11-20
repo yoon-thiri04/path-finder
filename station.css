@@ -128,12 +128,14 @@ body {
       font-weight: 400;
       margin: 15px 0;
   }
-.how-it-works-btn{
+  .how-it-works-btn{
     color:#FFFFFF;
     font-size: 14px;
     font-weight: 700;
     background: #55B76B;
-    padding: 15px 110px;
+    width: 300px;
+    height: 38px;
+    padding-top: 10px;
     margin: 0 auto;
     border: none;
     border-radius: 18px;
