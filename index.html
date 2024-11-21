@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PathFinder</title>
-    <script>
-        function clearForm() {
-            // Clear all the input fields in the form
-            document.getElementById("myForm").reset();
-        }
-    </script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +14,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="script.js"></script>
+    <script src="js/aboutscript.js"></script>
     <header>
         <nav class="navbar">
             
             <a href="#" class="logo"><img src="image/IMG_3418 (1).png"></a>
-            <button class="menu-btn">☰</button>
+            <button class="menu-button">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -45,7 +39,8 @@
           <div class="butter"><img src="image/butt.svg"></div>
           <div class="search-container">
            
-            <input type="text" placeholder="Where to?"><br>
+            <input type="text" id="whereTo" placeholder="Where to?">
+            <div id="suggestions" class="suggestions" ></div><br>
             <input type="text" placeholder="Check In - Check Out"><br>
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
             <p>"Discover Sustainability” Your Eco-Friendly Haven for Conscious Travelling.</p>
@@ -138,10 +133,10 @@
                  Explore sustainable stays, green living tips, and more!</h2>
         </h2>
         <div class="input-container">
-            <input type="text">
-            <button type="submit">Join the Eco-Community</button>
-           
-        </div>      
+            <input type="text" id="eco-input">
+            <button type="submit" id="eco-submit">Join the Eco-Community</button>
+        </div>
+            
     </div>
     </section>
     <div class="cute-divider"></div>
@@ -244,8 +239,8 @@
         </h2>
         <p>Be the first to know about our latest <br>updates, exclusive offers, and more.</p>
         <div class="joininput">
-            <input type="text" placeholder="Enter your email">
-            <button>Subscribe</button>
+            <input type="text" id="ecoInput" placeholder="Enter your email">
+            <button type="submit" id="ecoSubmit" >Subscribe</button>
         </div>      
     </div>
     <div class="divideme"></div>
@@ -310,6 +305,51 @@
     </footer>
     
 </section>
-    <script src="script.js"></script>
+<script>
+    document.getElementById("eco-submit").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevents form submission if inside a form
+        document.getElementById("eco-input").value = ""; 
+    });
+
+    document.getElementById('ecoSubmit').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        document.getElementById('ecoInput').value = ''; 
+    });
+
+     // Suggestions for "Where to?"
+     const suggestions = ["Thailand, Chiang Mai", "Thailand, Bangkok", 
+     "Thailand, Phuket","Thailand, Ayutthaya",
+       
+     ];
+    const whereToInput = document.getElementById("whereTo");
+    const suggestionsBox = document.getElementById("suggestions");
+
+    whereToInput.addEventListener("input", function () {
+        const value = whereToInput.value.toLowerCase();
+        suggestionsBox.innerHTML = ""; // Clear previous suggestions
+        if (value === "") {
+            // Show "nth" if the input is empty
+            suggestionsBox.style.display = "none";
+
+        } else if (value.startsWith("th")) {
+            suggestionsBox.style.display = "block";
+            
+            suggestions.forEach(suggestion => {
+                const div = document.createElement("div");
+                div.textContent = suggestion;
+                div.addEventListener("click", () => {
+                    whereToInput.value = suggestion; // Set clicked suggestion
+                    suggestionsBox.innerHTML = ""; // Clear suggestions
+                    suggestionsBox.style.display = "none";
+                });
+                suggestionsBox.appendChild(div);
+                
+
+            });
+        }
+        
+    });
+
+</script>
 </body>
 </html>
