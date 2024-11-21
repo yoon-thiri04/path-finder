@@ -152,10 +152,10 @@ body {
     font-size: 16px;
 }
 .search-container p{
-    font-size: 9.5px;
+    font-size: 9.7px;
     text-align: center;
     font-family: "Lato",sans-serif;
-    margin-top: 18px;
+    margin-top: 15.5px;
     color: #55B76B;
 }
 .search-btn {
@@ -984,12 +984,10 @@ h2.next{
 }
 @media  (max-width: 630px){
     .search-container p{
-        
-        padding-top: 10px;
+        padding-top: 12px;
        
     }
 }
-    
 
 
 @media (min-width: 1024px) {
