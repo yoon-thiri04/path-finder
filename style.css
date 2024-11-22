@@ -99,7 +99,7 @@ body {
     position: relative;
     margin-top: 45px;
     border-radius: 8px;
-    text-align: center;
+
     color: white;
 }
 
@@ -115,17 +115,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    text-align: center;
 }
 
 .form-overlay select,
 .form-overlay input {
     font-size: 12px;
     height: 30px;
-    text-align: center;
+   
     border-radius: 5px;
     width: 300px;
-    margin: 9px 0;
+    margin: 5px 0;
     border: 1px solid #55B76B;
 }
 
@@ -134,7 +133,18 @@ body {
     border-color: #cfedd1;
     outline: none;
 }
+#whereTo .placeholder {
+    color: #555; /* Grey color for placeholder */
+}
 
+#whereTo option {
+    color: #333; 
+}
+
+
+#whereTo:focus option:selected {
+    color: #000; /* Black color for selected option */
+}
 .form-overlay button {
     background-color: #55B76B;
     color: white;
@@ -159,22 +169,7 @@ body {
     white-space: nowrap;
 }
 
-#dateInput::-webkit-datetime-edit {
-    color: #555;
-    font-size: 12px;
-    text-align: center;
-}
 
-#dateInput:invalid::before {
-    content: attr(placeholder);
-    color: #aaa;
-    font-size: 12px;
-    text-align: center;
-}
-
-#dateInput:focus::before {
-    content: "";
-}
 
 .features-section {
     padding: 10px;
