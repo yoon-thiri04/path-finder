@@ -100,6 +100,7 @@ body {
     margin-top: 45px;
     border-radius: 8px;
     color: white;
+    
 }
 
 .background-image {
@@ -114,10 +115,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 15px;
+    text-align: center;
 }
 
-.form-overlay select,
-.form-overlay input {
+.search-container .form-overlay select,
+.search-container .form-overlay input {
     font-size: 12px;
     height: 30px;
     border-radius: 5px;
@@ -130,7 +132,7 @@ body {
 .form-overlay .date-picker {
     display: inline-block;
     
-    width: 93%;
+    width: 300px;
     height: 30px;
     margin-bottom: 6px;
     border-radius: .35rem;
@@ -192,12 +194,13 @@ body {
     height: 100%;
     text-align: center;
     top: 24%;
-    left: 50%;
+    left: 54%;
     transform: translate(-50%, -50%);
   }
   
   .date-picker>input[type="date"]:valid {
     color: #555 !important;
+    text-align: center;
   }
 .form-overlay input:focus,
 .form-overlay select:focus {
@@ -219,7 +222,7 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 8px 10px;
+    padding: 7px 10px;
     cursor: pointer;
     width: 300px;
     font-size: 12px;
@@ -970,14 +973,11 @@ h2.next{
         padding: 0 0;
     }
    
-.form-overlay input {
-    font-size: 12px;
-    height: 30px;
+.search-container .form-overlay input {
     text-align: center;
-    border-radius: 5px;
-    width: 300px;
-    margin: 7px 0;
-    border: 1px solid #55B76B;
+}
+.search-container .form-overlay select {
+    text-align: center;
 }
     .about {
         flex-direction:column;
