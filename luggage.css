@@ -48,21 +48,21 @@ body {
 }
 .map-container img{
     width: 100%;
-    height: 90vh;
+    height: 60vh;
    object-fit: cover;
 }
 
  .marker1 {
   position: absolute;
-  top:252px;
+  top:180px;
   left: 298px;
   color: #54B175;
   border-radius: 50%;
   
 }
 .marker1 img{
-    width:26.8px;
-    height: 32.15px;
+    width:23.85px;
+    height: 28.62px;
 }
 .marker2 {
     position: absolute;
@@ -73,49 +73,49 @@ body {
     
   }
   .marker2 img{
-    width:26.8px;
-    height: 32.15px;
+    width:23.85px;
+    height: 28.62px;
   }
   .marker3 {
     position: absolute;
-    top:290px;
-    left: 75px;
+    top:222px;
+    left: 65px;
     color: #54B175;
     border-radius: 50%;
     
   }
   .marker3 img{
-    width:26.8px;
-    height: 32.15px;
+    width:23.85px;
+    height: 28.62px;
   }
   .marker4 {
     position: absolute;
-    top:470px;
-    left: 180px;
+    top:350px;
+    left: 250px;
     color: #54B175;
     border-radius: 50%;
     
   }
   .marker4 img{
-    width:26.8px;
-    height: 32.15px;
+    width:23.85px;
+    height: 28.62px;
   }
   .marker5 {
     position: absolute;
-    top:510px;
-    left: 310px;
+    top:380px;
+    left: 340px;
     color: #54B175;
     border-radius: 50%;
     
   }
   .marker5 img{
-      width:26.8px;
-      height: 32.15px;
+    width:23.85px;
+    height: 28.62px;
   }
   .marker6 {
     position: absolute;
-    top:320px;
-    left: 130px;
+    top:260px;
+    left: 90px;
     color: #54B175;
     border-radius: 50%;
     
@@ -129,7 +129,7 @@ body {
   padding: 20px;
   
   position:absolute;
-  top:98%;
+  top:65%;
   right: 0%;
   left:0%;
   border-radius: 18px;

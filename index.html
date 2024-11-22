@@ -39,11 +39,12 @@
             <img src="image/ticket.png" alt="Background" class="background-image">
             <div class="form-overlay">
             <form action="hotel.html" method="GET">
-                <select id="whereTo" style="text-align: center;">
-                    <option value="" disabled selected >Where To?</option>
-                    <option value="city1">Myanmar, Bagan</option>
-                </select>
-                <input id="dateInput" type="date">
+                <select name="destination" id="whereTo" required>
+                    <option value="">Where To?</option>
+                    <option value="Myanmar">Myanmar, Bagan</option>
+                    
+                  </select>
+                  <input type="date" name="date" required>
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <br>
                 <p>"Discover Sustainability” Your Eco-Friendly Haven for Conscious Travelling.</p>
