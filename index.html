@@ -6,10 +6,11 @@
     <title>PathFinder</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
@@ -40,11 +41,11 @@
             <img src="image/ticket.png" alt="Background" class="background-image">
             <form class="form-overlay">
                 <select id="whereTo" style="text-align: center;">
-                    <option value="" disabled selected>Where To?</option>
+                    <option value="" disabled selected style="text-align: center;color: #555;">Where To?</option>
                     <option value="city1">Myanmar, Bagan</option>
                     
                 </select><br>
-                <input type="date" placeholder="mm/dd/yyyy" onfocus="(this.type='date')" onblur="(this.type='text')"><br>
+                <input id="dateInput" type="date" placeholder="mm/dd/yyyy"><br>
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 <br>
                 <p>"Discover Sustainability” Your Eco-Friendly Haven for Conscious Travelling.</p>
@@ -322,40 +323,15 @@
         document.getElementById('ecoInput').value = ''; 
     });
 
-     // Suggestions for "Where to?"
-     const suggestions = ["Thailand, Chiang Mai", "Thailand, Bangkok", 
-     "Thailand, Phuket","Thailand, Ayutthaya",
-       
-     ];
-    const whereToInput = document.getElementById("whereTo");
-    const suggestionsBox = document.getElementById("suggestions");
 
-    whereToInput.addEventListener("input", function () {
-        const value = whereToInput.value.toLowerCase();
-        suggestionsBox.innerHTML = ""; // Clear previous suggestions
-        if (value === "") {
-            // Show "nth" if the input is empty
-            suggestionsBox.style.display = "none";
-
-        } else if (value.startsWith("th")) {
-            suggestionsBox.style.display = "block";
-            
-            suggestions.forEach(suggestion => {
-                const div = document.createElement("div");
-                div.textContent = suggestion;
-                div.addEventListener("click", () => {
-                    whereToInput.value = suggestion; // Set clicked suggestion
-                    suggestionsBox.innerHTML = ""; // Clear suggestions
-                    suggestionsBox.style.display = "none";
-                });
-                suggestionsBox.appendChild(div);
-                
-
-            });
-        }
-        
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        flatpickr("#dateInput", {
+            dateFormat: "m/d/Y", // Set the desired format
+            allowInput: true     // Allows manual typing of dates
+        });
     });
-
 </script>
 </body>
 </html>

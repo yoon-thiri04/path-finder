@@ -159,7 +159,22 @@ body {
     white-space: nowrap;
 }
 
+#dateInput::-webkit-datetime-edit {
+    color: #555;
+    font-size: 12px;
+    text-align: center;
+}
 
+#dateInput:invalid::before {
+    content: attr(placeholder);
+    color: #aaa;
+    font-size: 12px;
+    text-align: center;
+}
+
+#dateInput:focus::before {
+    content: "";
+}
 
 .features-section {
     padding: 10px;
@@ -890,10 +905,18 @@ h2.next{
         font-size: 25px;
         padding: 0 0;
     }
-    .mytext {
-        padding: 20px 5px;
-       
-    }
+   
+  
+.form-overlay input {
+    font-size: 12px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background:none;
+    width: 300px;
+    margin: 7px 0;
+    border: 1px solid #55B76B;
+}
     .about {
         flex-direction:column;
         
