@@ -79,6 +79,7 @@ h2 {
     height: auto;
     object-fit: cover;
     border-bottom: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .room-info {

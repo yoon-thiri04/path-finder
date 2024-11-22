@@ -85,58 +85,57 @@ body {
     font-size: 1.2em;
     font-weight: bold;
 }
-.search-container {
-    background-image: url('image/ticket.png');
-    color: white;
-    padding: 20px;
-    background-size: cover;
-    margin-top: 50px;
-    border-radius: 8px; /* Optional: Add rounded corners for a softer look */
-}
 
-.suggestions {
-    display: none;
-     background:white;
-        border: 1px solid #ddd;
-        margin-left: 20px;
-        width: 300px;
-        margin-top: 2px;
-        padding: 10px;
-        position: absolute;
-        z-index: 1000;
-}
-.suggestions div {
-    padding: 5px 0;
-    cursor: pointer;
-    font-family: "Lato",sans-serif;
-    font-size: 14px;
-    color: #555;
-    text-align: left;
-}
-.suggestions div:hover {
-    background-color: #f0f0f0;
-}
 .hero-content .butter{
-    top:44%;
+    top:42%;
     right:0%;
     position: absolute;
     width: 50px;
+    z-index: 1;
     height: 150px;
     
 }
-.search-container input {
-    font-size:12px;
+.search-container {
+    position: relative;
+    margin-top: 45px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.background-image {
+    width: 98%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.form-overlay {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+}
+
+.form-overlay select,
+.form-overlay input {
+    font-size: 12px;
     height: 30px;
-   text-align: center;
+    text-align: center;
     border-radius: 5px;
     width: 300px;
-    margin: 4px 0;
+    margin: 8px 0;
     border: 1px solid #55B76B;
 }
-.search-container input:focus {
+
+.form-overlay input:focus,
+.form-overlay select:focus {
     border-color: #cfedd1;
+    outline: none;
 }
-.search-container button{
+
+.form-overlay button {
     background-color: #55B76B;
     color: white;
     border: none;
@@ -146,23 +145,20 @@ body {
     width: 300px;
     font-size: 12px;
     box-shadow: 0 7px 8px rgb(180, 180, 180);
-    
 }
-.search-container button i{
+
+.form-overlay button i {
     font-size: 16px;
 }
-.search-container p{
-    font-size: 9.7px;
+
+.form-overlay p {
+    font-size: 10px;
     text-align: center;
-    font-family: "Lato",sans-serif;
-    margin-top: 15.5px;
+    font-family: "Lato", sans-serif;
     color: #55B76B;
+    white-space: nowrap;
 }
-.search-btn {
-    background-color: #55B76B;
-    color: white;
-    cursor: pointer;
-}
+
 
 
 .features-section {
@@ -915,6 +911,9 @@ h2.next{
     .container {
         flex-direction: column;
         text-align: center;
+    }
+    .search-container .search-p{
+        margin: 15px 0;
     }
     .progress-content {
         flex-direction: column;
