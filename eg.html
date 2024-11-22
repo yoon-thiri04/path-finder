@@ -3,127 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Nearby Station Card</title>
+  <title>Eco-Friendly Travel Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Full-page background image */
+    body::before {
+      content: '';
+      background: url('background.jpg') no-repeat center center/cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .form-container {
+      position: absolute;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px 30px;
+      text-align: center;
+      width: 400px;
+    }
+
+    .form-container select, .form-container input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-container button {
+      width: 50px;
+      height: 40px;
+      background: #4CAF50; /* green color */
+      border: none;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .form-container button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .form-container .footer-text {
+      font-size: 12px;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    .form-container .footer-text span {
+      color: #4CAF50; /* green color for emphasis */
+    }
+
+    .butterfly {
+      position: absolute;
+      top: -10px;
+      right: -20px;
+      width: 40px;
+    }
+  </style>
 </head>
-<style>
-    /* styles.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
-
-.station-card {
-  border: 2px solid #aef0c3;
-  background-color: #f5fff9;
-  border-radius: 10px;
-  padding: 15px;
-  width: 300px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.section-title {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.card-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.icon-container {
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-}
-
-.details {
-  flex: 1;
-  margin: 0 10px;
-}
-
-.status {
-  background-color: #eaffea;
-  color: #3fb772;
-  border-radius: 20px;
-  padding: 5px 10px;
-  font-size: 12px;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-.station-info h4 {
-  font-size: 14px;
-  color: #333;
-  margin: 0;
-}
-
-.station-info .distance {
-  font-size: 12px;
-  color: #777;
-}
-
-.additional-info {
-  font-size: 12px;
-  color: #555;
-  margin-top: 5px;
-}
-
-.additional-info span {
-  display: block;
-}
-
-.go-button-container {
-  display: flex;
-  align-items: center;
-}
-
-.go-button {
-  background-color: #3fb772;
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  padding: 5px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.go-button:hover {
-  background-color: #34a563;
-}
-
-</style>
 <body>
-  <div class="station-card">
-    <h3 class="section-title">Nearby Stations</h3>
-    <div class="card-content">
-      <div class="icon-container">
-        <img src="battery-icon.png" alt="Battery Icon" class="icon">
-      </div>
-      <div class="details">
-        <div class="status">
-          <span class="plugs">7/12 Plugs Available</span>
-        </div>
-        <div class="station-info">
-          <h4>2nd Street, PTT Station</h4>
-          <span class="distance">3.0 mil</span>
-        </div>
-        <div class="additional-info">
-          <span>🚗 3 Min away</span>
-          <span>🔌 CCS / NACS Adapter</span>
-        </div>
-      </div>
-      <div class="go-button-container">
-        <button class="go-button">Go</button>
-      </div>
+  <div class="form-container">
+    <img src="butterfly.png" alt="Butterfly" class="butterfly">
+    <form action="hotel.html" method="GET">
+      <select name="destination" required>
+        <option value="">Where To?</option>
+        <option value="Myanmar">Myanmar</option>
+        <option value="Bagan">Bagan</option>
+      </select>
+      <input type="date" name="date" required>
+      <button type="submit">
+        <img src="search-icon.png" alt="Search">
+      </button>
+    </form>
+    <div class="footer-text">
+      "Discover <span>Sustainability</span>" Your Eco-Friendly Haven for Conscious Travelling.
     </div>
   </div>
 </body>

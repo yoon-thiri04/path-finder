@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
@@ -39,17 +37,18 @@
           <div class="butter"><img src="image/butt.svg"></div>
           <div class="search-container">
             <img src="image/ticket.png" alt="Background" class="background-image">
-            <form class="form-overlay">
+            <div class="form-overlay">
+            <form action="hotel.html" method="GET">
                 <select id="whereTo" style="text-align: center;">
                     <option value="" disabled selected >Where To?</option>
                     <option value="city1">Myanmar, Bagan</option>
-                    
-                </select><br>
-                <input id="dateInput" type="date" placeholder="mm/dd/yyyy"><br>
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </select>
+                <input id="dateInput" type="date">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <br>
                 <p>"Discover Sustainability” Your Eco-Friendly Haven for Conscious Travelling.</p>
             </form>
+        </div>
         </div>
            </div>
     </section>
@@ -324,14 +323,6 @@
     });
 
 
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        flatpickr("#dateInput", {
-            dateFormat: "m/d/Y", // Set the desired format
-            allowInput: true     // Allows manual typing of dates
-        });
-    });
 </script>
 </body>
 </html>
