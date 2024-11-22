@@ -19,12 +19,15 @@ body {
 }
 
 .menu-button {
-    font-size: 24px;
+    font-size: 26px;
     background: none;
     border: none;
     cursor: pointer;
+    color: #000;
 }
-
+.menu-button:hover{
+    color: #55B76B;
+}
 .logo img {
     width: 53px; /* Adjust size as needed */
     height: 55px;

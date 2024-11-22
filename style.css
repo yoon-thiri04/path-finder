@@ -23,12 +23,15 @@ body {
 }
 
 .menu-button {
-    font-size: 24px;
+    font-size: 26px;
     background: none;
     border: none;
     cursor: pointer;
+    color: #000;
 }
-
+.menu-button:hover{
+    color: #55B76B;
+}
 .logo img {
     width: 53px; /* Adjust size as needed */
     height: 55px;
@@ -266,8 +269,11 @@ body {
 
 
 .features-section {
-    padding: 10px;
-    background-color: #f9f9f9; /* Light background */
+    padding: 8px;
+    background-color: white; /* Light background */
+  }
+  .features-section a{
+    text-decoration: none;
   }
   
   .features {
@@ -1001,6 +1007,13 @@ h2.next{
 .search-container .form-overlay select {
     text-align: center;
 }
+ 
+.date-picker>input[type="date"]:valid {
+    color: #555 !important;
+    text-align: center !important;
+    font-family: "Montserrat", sans-serif;
+
+  }
 .search-container .form-overlay .date-picker>input[type="date"]:valid {
     
     text-align: center;
