@@ -125,8 +125,80 @@ body {
     width: 300px;
     margin: 8px 0;
     border: 1px solid #55B76B;
+    text-align: center;
 }
-
+.form-overlay .date-picker {
+    display: inline-block;
+    
+    width: 93%;
+    height: 30px;
+    margin-bottom: 6px;
+    border-radius: .35rem;
+    position: relative;
+    border: 1px solid #55B76B;
+    isolation: isolate;
+  }
+  
+  .date-picker,
+  .date-picker>* {
+    cursor: text;
+    font-size: 12px;
+  }
+  
+  .date-picker:hover {
+    background: white;
+  }
+  
+  .date-picker:active {
+    background: white;
+  }
+  
+  .date-picker:focus>input[type="date"],
+  .date-picker:focus-within>input[type="date"] {
+    color:#555;
+  }
+  
+  .date-picker:focus,
+  .date-picker:focus-within {
+    border-color: #8CDB9E;
+  }
+  
+  .date-picker>.placeholder::after {
+    content: "Choose your date";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    transform: translateY(-45%);
+    width: 100%;
+    text-align: center;
+    color: #222;
+  }
+  
+  .date-picker:focus>.placeholder,
+  .date-picker:focus-within>.placeholder,
+  .date-picker>input[type="date"]:valid+.placeholder {
+    display: none;
+  }
+  
+  .date-picker>input[type="date"] {
+    background: none;
+    border: none;
+    outline: none;
+    color: transparent;
+    font-family: serif;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .date-picker>input[type="date"]:valid {
+    color: #555 !important;
+  }
 .form-overlay input:focus,
 .form-overlay select:focus {
     border-color: #cfedd1;
@@ -139,8 +211,6 @@ body {
 #whereTo option {
     color: #333; 
 }
-
-
 #whereTo:focus option:selected {
     color: #000; /* Black color for selected option */
 }
