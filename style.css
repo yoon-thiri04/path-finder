@@ -128,11 +128,11 @@ body {
     margin: 8px 0;
     border: 1px solid #55B76B;
     text-align: center;
+    font-family: "Montserrat", sans-serif;
     color: #555;
 }
 .form-overlay .date-picker {
     display: inline-block;
-    
     width: 300px;
     height: 30px;
     margin-bottom: 6px;
@@ -140,30 +140,48 @@ body {
     position: relative;
     border: 1px solid #55B76B;
     isolation: isolate;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #555;
   }
   
   .date-picker,
   .date-picker>* {
     cursor: text;
     font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
   }
   
   .date-picker:hover {
     background: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #555;
   }
   
   .date-picker:active {
     background: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #555;
   }
   
   .date-picker:focus>input[type="date"],
   .date-picker:focus-within>input[type="date"] {
     color:#555;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #555;
   }
   
   .date-picker:focus,
   .date-picker:focus-within {
     border-color: #8CDB9E;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+   
   }
   
   .date-picker>.placeholder::after {
@@ -175,7 +193,9 @@ body {
     transform: translateY(-45%);
     width: 100%;
     text-align: center;
-    color: #222;
+    
+    font-family: "Montserrat", sans-serif;
+    color: #555;
   }
   
   .date-picker:focus>.placeholder,
@@ -189,40 +209,42 @@ body {
     border: none;
     outline: none;
     color: transparent;
-    font-family: serif;
     position: absolute;
     width: 90%;
     height: 100%;
     text-align: center;
     top:25%;
     transform: translate(-50%, -50%);
+    font-family: "Montserrat", sans-serif;
+   
   }
   
   .date-picker>input[type="date"]:valid {
     color: #555 !important;
-    text-align: center;
+    text-align: center !important;
+    font-family: "Montserrat", sans-serif;
+
   }
 .form-overlay input:focus,
 .form-overlay select:focus {
     border-color: #cfedd1;
     outline: none;
 }
-#whereTo .placeholder {
-    color: #555; /* Grey color for placeholder */
+#whereTo {
+    text-align-last: center; /* Ensures options are center-aligned */
+    color: #555; /* Grey text color for the dropdown */
 }
 
 #whereTo option {
-    color: #333; 
-}
-#whereTo:focus option:selected {
-    color: #000; /* Black color for selected option */
+    text-align: center; /* Center align text in the dropdown options */
+    color: #555;
 }
 .form-overlay button {
     background-color: #55B76B;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 7px 10px;
+    padding: 8px 10px;
     cursor: pointer;
     width: 300px;
     font-size: 12px;
