@@ -979,6 +979,10 @@ h2.next{
 .search-container .form-overlay select {
     text-align: center;
 }
+.search-container .form-overlay .date-picker>input[type="date"]:valid {
+    
+    text-align: center;
+  }
     .about {
         flex-direction:column;
         
@@ -997,6 +1001,7 @@ h2.next{
         flex-direction: column;
         text-align: center;
     }
+
     .search-container .search-p{
         margin: 15px 0;
     }
