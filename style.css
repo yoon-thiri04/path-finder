@@ -1015,7 +1015,6 @@ h2.next{
 
   }
 .search-container .form-overlay .date-picker>input[type="date"]:valid {
-    
     text-align: center;
   }
     .about {
@@ -1106,11 +1105,20 @@ h2.next{
    
     
 }
-@media  (max-width: 630px){
+@media  (max-width: 515px){
     .search-container p{
         padding-top: 12px;
        
     }
+    .date-picker>input[type="date"]:valid {
+        color: #555 !important;
+        text-align: center !important;
+        font-family: "Montserrat", sans-serif;
+    
+      }
+    .search-container .form-overlay .date-picker>input[type="date"]:valid {
+        text-align: center;
+      }
 }
 
 
